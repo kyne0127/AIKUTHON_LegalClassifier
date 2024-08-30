@@ -1,0 +1,16 @@
+python run_mrc_finetuning_sample.py \
+  --openapi_key 'user-key-required' \
+  --bert_model '..' \
+  --bert_model_file 'pytorch_model.bin' \
+  --vocab_file 'vocab.korean_morp.list' \
+  --do_train \
+  --do_predict \
+  --train_file korquad_sample_required \
+  --predict_file korquad_sample_required \
+  --train_batch_size 4 \
+  --learning_rate 3e-5 \
+  --num_train_epochs 5.0 \
+  --max_seq_length 512 \
+  --max_query_length 128 \
+  --doc_stride 128 \
+  --output_dir ./output
